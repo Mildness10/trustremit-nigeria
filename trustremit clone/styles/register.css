@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    font-family: 'Lato', sans-serif;;
+}
+
+
+
+/* STYLE FOR NAVBAR */
+
+
+
+.divMain{
+    position: fixed;
+    width: 100%;
+}
+
+.img-responsive{
+    max-width: 30%;
+    height: auto;
+}
+.home-button, .help-button{
+    font-weight: 700;
+}
+.login-button{
+    color: #008000 !important;
+    font-weight: 700;
+    border: 1px solid #008000;
+    border-radius: 5px;
+}
+
+
+
+/* STYLE FOR REGISTER SECTION */
+
+
+
+.register-section{
+    padding-top: 150px;
+    text-align: center;
+    
+}
+h3{
+    font-size: 50px !important;
+}
+.link{
+    text-decoration: underline !important;
+}
+input{
+    padding: 3px 50px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 10px !important;
+}
+form{
+    /* width: 20%; */
+    margin: 0 auto;
+}
+label{
+    text-align: left;
+}
+
+select{
+    padding: 3px 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    appearance: none;
+}
+.select-div{
+    margin-left: -200px;
+}
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+.check{
+    opacity: 0.5;
+    font-size: 16px !important;
+    width: 50px;
+}
+
+
+/* STYLE FOR FOOTER SECTION */
+
+
+footer{
+    background: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-p{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .login-button{
+        width: 20%;
+        text-align: center;
+    }
+}

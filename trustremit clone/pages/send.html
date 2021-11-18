@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trust Remit</title>
+        <link rel="stylesheet" href="/styles/send.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+</head>
+<body>
+
+
+
+    <!-- NAVBAR -->
+
+
+
+    <div class="divMain">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="/index.html"><img src="/images/logo.jpg" alt="" class="img-responsive"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link home-button" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link help-button" href="/index.html#help" >Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link send-button" href="#" >Send</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link account-button" href="#" ><select name="account" id="select-box">
+                    <option value="myAccount" selected disabled>My Account</option>
+                    <option value="details">My Details</option>
+                    <option value="Recipients">My Recipients</option>
+                    <option value="transactions">My Transactions</option>
+                </select></a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link btn  logout-button" href="/index.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+
+    <!-- BANNER -->
+
+
+
+    <div class="banner-section container-fluid">
+        <div class="section-one">
+            <h3 class="section-one-a">A secure way to send money to Nigeria</h3>
+            <p class="section-one-b">Payment is delivered within minutes
+            </p>
+        </div>
+        <div class="section-two">
+            <div class="form-content">
+            <form action="">
+                <label for="amount-sent"><input type="text" name="text" id="text-input" placeholder="You Send"><span class="currency">$</span>
+                <p style="font-weight: 600; padding-top: 5px; margin-bottom: -1px;">1$ = 500NGN</p></label>
+                <br>
+                <label for="amount-received"><input type="text" name="text" id="text-output" placeholder="They  Get"><span class="currency">NGN</span></label>
+                <br>
+                <br>
+                <select name="send" id="send" class="select">
+                    <option value="mobileMoney" selected>Mobile Money</option>
+                    <option value="bankAccount">Bank Account</option>
+                    <option value="airtimeTopup">Airtime Topup</option>
+                </select>
+                <br>
+                <br>
+                <p class="div-p">Pay With</p>
+                <select name="pay-method" id="pay-method" class="select">
+                    <option value="visa" selected>Visa / Mastercard</option>
+                    <option value="btc">Bitcoin</option>
+                    <option value="eth">Ethereum</option>
+                </select>
+                <br>
+                <div class="div-one">
+                    <p class="div-p">Fee</p>
+                    <p class="div-p">0.00USD</p>
+                </div>
+                <div class="div-two">
+                    <p class="div-p">Transfer time</p>
+                    <p class="div-p"><i class="fas fa-bolt"></i>Within Minutes</p>
+                </div>
+                <hr>
+                <div class="div-three">
+                    <p class="div-p">Total to Pay</p>
+                    <p class="div-p">0.00USD</p>
+                </div>
+                <div class="div-four">
+                    <p class="div-p">Recipients gets</p>
+                    <p class="div-p">0.00USD</p>
+                </div>
+                <button type="submit" class="btn btn-default" id="banner-button">Continue</button>
+                <br>
+                <a href="/pages/index.html" class="cancel">Cancel</a>
+                
+            </form>
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- SECTION ONE -->
+
+    <div class="sec-head">
+    <div class="how-it-works">
+        <h3 style="font-size: 50px;">How it works</h3>
+        <p>
+            Just 5 steps to get it done
+        </p>
+    </div>
+    <div class="section-div">
+        <div class="sec-one">
+            <img src="/images/one.png" alt="" class="section-img">
+            <h5>1. Create an account</h5>
+            <p><a href="/pages/register.html" style="text-decoration: underline;">Register</a> for free on our website or download the app</p>
+        </div>
+        <div class="sec-one">
+            <img src="/images/two.png" alt="" class="section-img">
+            <h5>2. Enter your transfer details</h5>
+            <p>Choose to send to Ghana and add your transfer method: Bank Transfer | Mobile Money | AirTime Top-Up.</p>
+        </div>
+        <div class="sec-one">
+            <img src="/images/three.jpg" alt="" class="section-img">
+            <h5>3. Choose amount you want to transfer</h5>
+            <p>Our low fees and and exchange rates are showed to you when performing this action</p>
+        </div>
+    </div>
+    <div class="section-div-a">
+        <div class="div-a">
+            <img src="/images/four.jpg" alt="" class="section-img">
+            <h5>4. Enter recipient details</h5>
+            <p>Or send to already added Recipient</p>
+        </div>
+        <div class="div-a">
+            <img src="/images/five.jpg" alt="" class="section-img">
+            <h5>Pay for your transfer</h5>
+            <p>Pay via: Card (Debit, Credit and Prepaid) | Bitcoin and Ethereum</p>
+        </div>
+    </div>
+</div>
+    
+
+
+    <!-- FOOTER -->
+
+
+
+    <hr>
+    <footer class="container-fluid">
+        <p class="footer-p">&copy; TrustRemit, All Rights Reserved</p>
+    </footer>
+
+
+
+
+</body>
+</html>
